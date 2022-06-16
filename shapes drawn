@@ -1,0 +1,63 @@
+//js
+var canvas = document.querySelector("canvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+var c = canvas.getContext("2d");
+
+var x= 0;
+var y = 0;
+var dy = 1;
+var height = 50;
+var width = 100
+for(var i = 0 ; i<=window.innerWidth/100 ; i++){
+    c.beginPath();
+    c.moveTo(x, y);
+    c.lineTo(x+width, y);
+    c.lineTo(x +width/2, y + height);
+    c.fill();
+    x+=100;
+} 
+
+c.fillStyle = "red";
+c.fillRect(200,100,150,25);
+
+c.fillStyle = "red";
+c.fillRect(600,190,150,25); 
+
+c.fillStyle = "red";
+c.fillRect(400,300,150,25);
+
+c.fillStyle = "red";
+c.fillRect(50,400,150,25);
+
+c.fillStyle = "red";
+c.fillRect(800,500,150,25);
+
+c.fillStyle = "red";
+c.fillRect(1200,150,150,25);
+
+c.fillStyle = "red";
+c.fillRect(1000,350,150,25); 
+
+c.fillStyle = "red";
+c.fillRect(1500,380,150,25);
+
+c.fillStyle = "red";
+c.fillRect(1300,480,150,25);
+
+c.fillStyle = "red";
+c.fillRect(1690,300,150,25);
+
+
+c.beginPath();
+c.arc(210,90,10,0,Math.PI*2);
+c.fillStyle = "blue";
+c.stroke(); 
+//html
+<canvas></canvas>
+//css
+body{
+  margin: 0;
+  //background-color : blue;
+  //background-color:powderblue;
+}
